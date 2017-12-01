@@ -1,0 +1,21 @@
+body {
+	width: 300px;
+}
+
+img {
+	height: 80px;
+	width: 80px;
+}
+
+.active {
+	color: #ff0000;
+}
+
+.panel {
+	height: 165px;
+}
+
+#radio-list {
+	height: 165px;
+	overflow-y: scroll;
+}

@@ -1,0 +1,30 @@
+TODO
+
+- Loading button -> (Done by GhostWanted)
+
+- Only one radio must work -> (Done by GhostWanted)
+
+- Add order to tabs
+
+- Make a global variable that will hold the current activated radio.
+This way we can remove $( ".radio-item" ).removeClass("active"); which is a loop over the radio items.
+
+- Try to hold every thing in one loop in the popup.js
+
+- Fixed this wrong code:
+	function clickItem() {
+		$( ".radio-item" ).click(function() {
+		...
+	...
+becasue clickItem is the function that will be called when the item is clicked
+and .click is also a function that will be called when the item is clicked.
+So..., basically, we are dealing with some sort of Inception.
+If you didn't watch that movie, then SHAME on you! -> (Done by Dmidma)
+
+- Due to dmidma Merge things got fucked up but fixed errors. -> (Done by Dmidma)
+
+
+
+Notes : 
+- Color code of Tunisia flag : #E70013
+- The JSON must be wrapped inside an array, else it will cause an UNEXPECTED error.

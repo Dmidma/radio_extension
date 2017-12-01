@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Tunisian Radios for Google Chrome">
+    <meta name="author" content="Oussema Hidri, Mohamed Amine Hosni">
+
+    <title>Tunisian Radios</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
+    <style>
+      td  {
+        padding-right: 5px;
+      }​
+    </style>
+  </head>
+  <body>
+
+      <!-- Radio header section -->
+      <div class="panel panel-default">
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-xs-8">
+              <h4 id="current-radio-header"></h4>
+              <button type="button" disabled id="backward-button" class="btn btn-primary btn-sm"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+              <button type="button" id="stop-button" class="btn btn-primary btn-sm"><i class="fa fa-stop" aria-hidden="true"></i></button>
+              <button type="button" disabled id="forward-button" class="btn btn-primary btn-sm"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+
+            </div>
+            <div class="col-xs-4">
+              <img id="current-radio-img" src="../img/icon-128.png" height="128" width="128" alt="Current radio" class="img-rounded">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <table>
+                <tr>
+                  <td>
+                    <input id="volume" type="range" min="0" max="100" value="100" />
+                  </td>
+                  <td>
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xs-6">
+            </div>
+          </div>
+        </div>
+        <!-- Radio content section -->
+        <div id="radio-list" class="list-group list-group-primary">
+        </div>
+      </div>
+  </body>
+
+  <!--      Scripts     -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/radios.json"></script>
+  <script type="text/javascript" src="../js/popup.js"></script>
+</html>
+
